@@ -371,6 +371,11 @@ main {
   padding: px;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    padding-top: 20px; /* 모바일에서 위에 공간을 줄임 */
+  }
+}
 .card-header1 h1 {
   font-size: 30px;
   font-weight: 600;
