@@ -249,7 +249,6 @@ h3 {
 body {
   background-image: url("background.jpg"); /* 배경 사진 */
   background-size: cover; /* 꽉 채우기 위해 */
-  background-repeat: no-repeat;
   font-family: "Roboto", sans-serif; /* 영어 폰트 */
   display: flex; /* 반응형 디스플레이 */
   flex-direction: column; /* 정렬 방향 */
