@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>진태규 회원가입</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <div class="main-signup">
+        <header>
+            <div class="logo">
+                <h1>그림 실력 키우기</h1>
+            </div>
+        </header>
+
+        <!--회원가입 부분-->
+        <section class="signup-wrap">
+            <div>
+                <h3>아이디</h3>
+                <span class="signup-input">
+                    <input id="id" type="text"></input>
+                    <span class="signup-at">@naver.com</span>
+                </span>
+                <h3>비밀번호</h3>
+                <span class="signup-input">
+                    <input id="pw" type="text"></input>
+                </span>
+
+            </div>
+
+            <div style="margin-top: 35px;">
+                <!--이름,생년월일,성별,이메일-->
+                <h3>이름</h3>
+                <span class="signup-input">
+                    <input id="signup-name" type="text"></input>
+                </span>
+
+                <h3>생년월일</h3>
+                <span style="display: flex;">
+                    <span class="signup-input-birth">
+                        <input id="signup-birth-yy" type="text" placeholder="년(4자)"></input>
+                    </span>
+                    <span class="signup-input-birth" style="margin-left: 10px;">
+                        <select id="signup-birth-mm" class="selectbox" name="month" onchange="">
+                            <option value="month">월</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </span>
+                    <span class="signup-input-birth" style="margin-left: 10px;">
+                        <input id="signup-birth-dd" type="text" placeholder="일"></input>
+                    </span>
+                </span>
+
+                <h3>성별</h3>
+                <span class="signup-input">
+                    <select id="signup-gender" class="selectbox" name="gender" onchange="">
+                        <option value="gender">성별</option>
+                        <option value="man">남자</option>
+                        <option value="woman">여자</option>
+                        <option value="no">선택 안함</option>
+                    </select>
+                </span>
+            </div>
+                
+
+            <div>
+                <div class="signup-btn-wrap">
+                    <input type="button"  id="signup-btn" value="회원가입" onclick="create_id();">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

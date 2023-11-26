@@ -1,0 +1,577 @@
+body {
+  background-color: #f5f6f7;
+}
+select {
+  width: 85px;
+  height: 25px;
+  outline: none;
+  background: #f5f6f7;
+  border: 1px solid #999;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.main {
+  text-align: center;
+  margin-top: 20px;
+}
+input {
+  cursor: pointer;
+}
+
+/*input 아이디박스*/
+.login-id-wrap {
+  margin: 0px 10px 8px 10px;
+  padding: 10px;
+  border: solid 1px #dadada;
+  background: #fff;
+}
+/*input 아이디 form*/
+#id {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+/*input 패스워드박스*/
+.login-pw-wrap {
+  margin: 0px 10px 8px 10px;
+  padding: 10px;
+  border: solid 1px #dadada;
+  background: #fff;
+}
+
+/*input 패스워드 form*/
+#pw {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+/*로그인버튼박스*/
+.login-btn-wrap {
+  height: 52px;
+  line-height: 55px;
+  margin: 0px 10px 8px 10px;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  background-color: #03c75a;
+  color: #fff;
+  cursor: pointer;
+}
+/*로그인버튼*/
+#login-btn {
+  width: 100px;
+  background-color: #03c75a;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+}
+/*로그인 아래 박스*/
+.under-login {
+  height: 50px;
+  border-bottom: 1px solid gainsboro;
+  margin: 0px 10px 35px 10px;
+}
+/*로그인상태유지*/
+.stay-check {
+  margin-left: 7px;
+  float: left;
+}
+/*찾기 및 회원가입*/
+.find-signup-wrap {
+  height: 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/*찾기 및 회원가입 글자 희미하게 바꾸기*/
+.find-signup-wrap a {
+  color: rgb(150, 150, 150);
+  text-decoration: none;
+  font-weight: 500;
+}
+.find-signup-wrap span {
+  color: rgb(150, 150, 150);
+  font-weight: 500;
+}
+/*회원가입*/
+.sign-up {
+  margin: 3px;
+  font-size: 14px;
+}
+
+/*가로 800px 이상일때*/
+@media (min-width: 800px) {
+  .main {
+    width: 460px;
+    margin: auto;
+  }
+}
+
+/*회원가입 부분*/
+.main-signup {
+  text-align: center;
+  width: 460px;
+  margin: auto;
+}
+h3 {
+  margin: 19px 0px 8px;
+  text-align: left;
+  font-size: 14px;
+  font-family: Dotum, "돋움", Helvetica, sans-serif;
+}
+.signup-input {
+  display: flex;
+  /* margin: 0px 10px 8px 10px; */
+  padding: 10px;
+  border: solid 1px #dadada;
+  background: #fff;
+  cursor: pointer;
+}
+.signup-input-c {
+  display: flex;
+  /* margin: 0px 10px 8px 10px; */
+  padding: 10px;
+  border: solid 1px #dadada;
+  background: #f5f6f7;
+  cursor: pointer;
+}
+.signup-input-c input {
+  background: #f5f6f7;
+}
+#signup-id,
+#signup-pw,
+#signup-pww {
+  height: 29px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.signup-at {
+  color: rgb(150, 150, 150);
+  font-size: 15px;
+  font-family: Dotum, "돋움", Helvetica, sans-serif;
+  margin-top: 8px;
+}
+
+.signup-input-birth {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 51px;
+  border: solid 1px #dadada;
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+}
+#signup-birth-yy,
+#signup-birth-mm,
+#signup-birth-dd {
+  width: 113px;
+  height: 29px;
+  border: none;
+  outline: none;
+}
+#signup-name,
+#signup-gender,
+#signup-email,
+#signup-country,
+#signup-phone,
+#signup-cnum {
+  width: 100%;
+  height: 29px;
+  border: none;
+  outline: none;
+}
+#signup-gender {
+  background-color: white;
+}
+#signup-country {
+  background-color: white;
+}
+#signup-birth-mm {
+  background-color: white;
+}
+/*본인 확인 이메일*/
+.choice {
+  display: flex;
+}
+.choice span {
+  margin-top: 20px;
+  color: rgb(150, 150, 150);
+  font-size: 13px;
+  font-family: Dotum, "돋움", Helvetica, sans-serif;
+}
+/*회원가입버튼박스*/
+.signup-btn-wrap {
+  height: 52px;
+  line-height: 55px;
+  margin: 10px 0px 50px 0px;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  background-color: #03c75a;
+  color: #fff;
+  cursor: pointer;
+}
+/*회원가입버튼*/
+#signup-btn {
+  width: 100px;
+  background-color: #03c75a;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+}
+/*인증번호버튼박스*/
+.cnum-btn-wrap {
+  height: 52px;
+  line-height: 55px;
+  margin: 10px 0px 0px 10px;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  background-color: #03c75a;
+  color: #fff;
+  cursor: pointer;
+}
+/*인증번호버튼*/
+#cnum-btn {
+  width: 115px;
+  background-color: #03c75a;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+}
+/* 리셋 스타일 및 폰트 가져오기 */
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* 전체 body 스타일 */
+body {
+  background-image: url("background.jpg"); /* 배경 사진 */
+  background-size: cover; /* 꽉 채우기 위해 */
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif; /* 영어 폰트 */
+  display: flex; /* 반응형 디스플레이 */
+  flex-direction: column; /* 정렬 방향 */
+  align-items: center; /* 가운데 정렬 */
+  padding-top: 50px; /* 위에 공간 */
+  font-weight: bold; /* 폰트 굵기 */
+}
+
+/* 그림판 부분의 스타일 */
+.canvas {
+  width: 70%; /* 그림판 넓이 */
+  max-width: 700px; /* 그림판 최대 넓이 설정 */
+  height: auto; /* 높이를 자동으로 설정하여 비율 유지 */
+  background-color: white; /* 그림판 배경 */
+  border-radius: 15px; /* 테두리 둥글게 */
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068); /* 그림판 그림자 */
+}
+
+/* 전체 그림판을 감싸는 부분의 스타일 */
+.controls {
+  margin-top: 20px; /* 위에 테두리 */
+  display: flex; /* 디스플레이 화면 유동적 */
+  flex-direction: column; /* 정렬 방향 */
+  align-items: center; /* 가운데 정렬 */
+}
+
+/* 그림판 안에 기능 버튼 스타일 */
+.controls .controls__btns {
+  margin-bottom: 30px;
+}
+
+/* 색상 지정 버튼들을 담는 부분의 스타일 */
+.controls .controls__colors {
+  display: flex;
+}
+
+/* 각각의 색상 지정 버튼 스타일 */
+.controls__colors .controls__color {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);
+  border-radius: 50%; /* 수정: 색상 버튼을 원형으로 변경 */
+  cursor: pointer; /* 마우스를 위로 가져다댔을때 pointer 모양으로 바뀜 */
+}
+
+/* 각각의 기능 버튼 스타일 */
+.controls__btns button {
+  all: unset; /* 기본 스타일을 초기화 */
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 0px;
+  width: 80px;
+  text-align: center;
+  border-radius: 8px; /* 테두리 둥글게 */
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068); /* 버튼 그림자 */
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase; /* 대문자 */
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* 버튼을 눌렀을때의 스타일 */
+.controls__btns button:active {
+  transform: scale(0.98); /* 들어갔다 나오는 걸 표현 */
+}
+
+/* 팬 굵기 조절 슬라이더 스타일 */
+.controls__range {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* 모바일 화면에 대한 스타일 */
+@media only screen and (max-width: 600px) {
+  .canvas {
+    width: 90%; /* 캔버스 너비를 90%로 설정 */
+  }
+
+  /* 작은 화면에서 색상 버튼 스타일 수정 */
+  .controls__colors .controls__color {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+header {
+  background-color: #ffffff00;
+  color: rgb(0, 0, 0);
+  padding: 33px;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0); /* 배경을 투명으로 설정 */
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  transition: color 0.3s; /* 색상 변화에 트랜지션 효과 추가 */
+}
+
+/* 호버 효과 적용 */
+nav a:hover {
+  color: #de0000; /* 호버 시 글자 색상 변경 */
+}
+main {
+  padding: px;
+}
+
+.card-header1 h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.card-write {
+  padding: 20px;
+}
+
+.card-write input,
+textarea {
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #e6e6e6;
+}
+
+.card-write .myinfo input[type="text"] {
+  width: 25%;
+  margin-right: 50px;
+}
+.card-write .myinfo input[type="password"] {
+  width: 31%;
+  /* margin-right: 50px; */
+}
+
+.card-write .title-w input[type="text"] {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 85.5%;
+}
+
+.card-write .msg textarea {
+  min-width: 85.5%;
+  max-width: 85.5%;
+  min-height: 200px;
+  max-height: 200px;
+  box-shadow: inset 3px 3px 10px #e6e6e6;
+
+  /* vertical-align: 텍스트를 수직, 수평 정렬 */
+  vertical-align: top;
+}
+.msg img {
+  max-width: 100%; /* 이미지의 최대 너비를 부모 요소의 100%로 설정 */
+  height: auto; /* 이미지의 높이를 자동으로 조절하여 가로 세로 비율 유지 */
+  display: block; /* 이미지를 블록 요소로 설정하여 다른 요소와의 간격을 주기 위함 */
+  margin-top: 10px; /* 원하는 간격 조절 (선택 사항) */
+}
+.card-write input[type="file"] {
+  border: none;
+  box-shadow: none;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+.btn-w {
+  right: 0;
+  bottom: 0;
+  margin: 10px 10px 20px 10px;
+  padding: 10px;
+}
+
+.btn-w a {
+  background-color: tomato;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+}
+.under-text {
+  padding: 10px 15px;
+  background-color: #444444;
+  border-radius: 5px;
+  color: #ffffff;
+  position: absolute;
+  opacity: 0;
+  transition: all ease 0.5s;
+  display: none; /* 추가된 부분 */
+  font-size: 90%;
+}
+
+.under-title {
+  color: #05080c;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: bolder;
+}
+
+.under-title:hover + .under-text {
+  font-size: 50%;
+  display: block;
+  opacity: 1;
+}
+.under-title:hover {
+  color: #35c5c5;
+  text-decoration: underline;
+}
+
+.card {
+  width: 600px;
+  height: 600px;
+  margin: 30px auto;
+
+  box-shadow: 3px 3px 50px #e6e6e6;
+  border-radius: 20px;
+  position: relative; /* 상대적인 값 */
+}
+
+.card-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-header h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-body input[type="search"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.card-body a.search {
+  padding: 10px 15px 10px 15px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: tomato;
+  color: #fff;
+}
+
+.card-body div {
+  margin-top: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.card-body div div {
+  display: inline-block;
+  padding: 15px 10px 15px 10px;
+  margin: 0;
+  border: none;
+}
+
+.card-body .check,
+.delete {
+  width: 5%;
+}
+
+.card-body .title {
+  width: 70%;
+  text-align: left;
+}
+
+.card-body .delete button {
+  background-color: #fff;
+  border: none;
+}
+
+.number {
+  padding: 10px;
+}
+
+.number li {
+  display: inline-block;
+}
+
+.number li a {
+  display: block;
+  width: 40px;
+  /* text-align이 위로 올라간다 */
+  line-height: 40px;
+  border-radius: 10px;
+  margin: 3px;
+  margin-top: 20px;
+  box-shadow: 0 5px 10px #f1f1f1;
+}
+
+.number li a.active {
+  background-color: rgb(252, 212, 205);
+}
+
+.btn {
+  position: absolute; /* 절대적인 값 */
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  margin: 10px 10px 20px 10px;
+}
+.btn a {
+  padding: 10px;
+  background-color: tomato;
+  color: #fff;
+  border-radius: 10px;
+}

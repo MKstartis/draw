@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>진태규 그림판</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="main.html">
+          <h1>진태규 &nbsp;&nbsp;</h1>
+        </a>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="index.html">로그인페이지</a></li>
+            <li><a href="main.html">그림판</a></li>
+            <li><a href="doc1.html">일기장</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <!-- 캔버스  -->
+    <div class="controls">
+      <div class="controls__range">
+        <input
+          type="range"
+          id="jsRange"
+          min="0.1"
+          max="10.0"
+          value="5.0"
+          step="0.1"
+        />
+      </div>
+
+      <div class="controls__btns">
+        <input type="file" id="jsFileInput" accept="image/*" />
+        <button id="jsMode">fill</button>
+        <!-- 배경 채우기 버튼 -->
+        <button id="jsSave">Save</button>
+        <!-- 저장 버튼 -->
+        <button id="jsRemove">Remove</button>
+        <!-- 전체 지우기 버튼 -->
+        <button id="jsErase">Erase</button>
+        <!-- 지우기 버튼 -->
+        <button id="jsUndo">Undo</button>
+      </div>
+      <div class="controls__colors" id="jsColors">
+        <div
+          class="controls__color jsColor"
+          style="background-color: black"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: white"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #7f7f7f"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #c3c3c3"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: red"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #ffaec9"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: orange"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: yellow"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: green"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #b5e61d"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: blue"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #00a2e8"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #a0522d"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #c8bfe7"
+        ></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
